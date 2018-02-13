@@ -1,0 +1,24 @@
+{
+  "name": "formation-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babelify": "./node_modules/.bin/watchify ./src/index.js -t [babelify] -o ./dist/index.js",
+    "dev": "npm run sync | npm run babelify",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "./node_modules/.bin/browser-sync start --server --files \"dist/index.*\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-env": "latest",
+    "babel-register": "latest",
+    "babelify": "latest",
+    "watchify": "latest",
+    "browser-sync": "latest",
+    "material-design-lite": "latest",
+    "material-design-icons": "latest",
+    "ui-design": "latest"
+  }
+}

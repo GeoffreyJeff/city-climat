@@ -1,0 +1,7 @@
+change.log
+dist/
+index.json
+node_modules/
+package-lock.json
+
+

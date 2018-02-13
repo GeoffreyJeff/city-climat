@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Formation JS</title>
+  </head>
+  <body class="">
+      <link rel="stylesheet" href="./node_modules/material-design-lite/material.min.css">
+      <script src="./node_modules/material-design-lite/material.min.js"></script>
+      <link rel="stylesheet" href="./node_modules/material-design-icons/iconfont/material-icons.css">
+      <link rel="stylesheet" href="./node_modules/ui-design/dist/ui-design.css">
+      <script src="./node_modules/ui-design/dist/ui-design.js"></script>
+      <link rel="stylesheet" href="./dist/index.css">
+
+
+<!-- @component -->
+<city class="ui col-12 left mdl-layout mdl-js-layout" ></city>
+<!-- @component meteopolution -->
+<meteopolution class="active frameable mdl-layout__content day">
+  <!-- @component temperature -->
+  <temperature class="ui col-12 col-v-max-4 grey-50"></temperature>
+  <!-- @component climat -->
+  <climat class="ui col-12 col-v-max-2 grey-50"></climat>
+  <!-- @component polution -->
+  <polution class="ui col-v-max-4"></polution>
+</meteopolution>
+
+<script src="./dist/index.js"></script>
+
+<!-- compatibility -->
+<script>
+  var elements = ["city", "meteopolution", "temperature", "climat", "polution"];
+  for (var key in elements) {
+    window.document.createElement(elements[key]);
+  }
+</script>
+<style>
+  city, meteopolution, temperature, climat, polution {
+    display: block;
+    width: 100%;
+  }
+</style>
+
+  </body>
+</html>
